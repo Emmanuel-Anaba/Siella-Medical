@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  header {
+    background-image: url("../img/bg.webp");
+  }
+  .myContainer {
+    @apply w-[90%] md:w-[85%] mx-auto;
+  }
+  .card {
+    @apply rounded-lg px-4 py-8 overflow-hidden myShadow;
+  }
+  .card svg {
+    @apply fill-none mx-auto;
+  }
+  #who-we-serve .card {
+    @apply bg-white dark:bg-[#333333];
+  }
+  #what-we-do span {
+    @apply absolute top-[50%] translate-y-[-50%] left-0 p-3 text-[80%] lg:text-lg;
+  }
+  #attributes .card {
+    @apply bg-[#fff] dark:bg-[#232323] p-0;
+  }
+  .card-body {
+    @apply py-3 px-1 lg:h-[196px] flex flex-col justify-evenly text-center text-base;
+  }
+  .c-circle {
+    content: url("../svg/check-circle.svg");
+    @apply w-[20px] h-[20px] md:w-[30px] md:h-[30px] align-middle;
+  }
+  .form-input {
+    @apply w-[100%] p-1 font-light outline-0 text-[#232322] rounded-md border-2 dark:border-0;
+  }
+  footer div a {
+    @apply block hover:underline;
+  }
+  .myShadow {
+    @apply shadow-xl dark:dark-shadow;
+  }
+  .dark-shadow {
+    box-shadow: 8px 8px 12px 0 rgba(255, 255, 255, 0.14),
+      -12px -12px 13px 0 rgba(0, 0, 0, 0.25);
+  }
+}
